@@ -1,0 +1,365 @@
+[0.000000] (-) TimerEvent: {}
+[0.001656] (mren203_new) JobQueued: {'identifier': 'mren203_new', 'dependencies': OrderedDict()}
+[0.002194] (mren203_new) JobStarted: {'identifier': 'mren203_new'}
+[0.047792] (mren203_new) JobProgress: {'identifier': 'mren203_new', 'progress': 'cmake'}
+[0.050588] (mren203_new) Command: {'cmd': ['/usr/bin/cmake', '/home/mren203_group_002/ros2_ws/src/mren203_new', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new'], 'cwd': '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mren203_group_002'), ('SSH_CLIENT', '192.168.50.170 51912 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mren203_group_002'), ('OLDPWD', '/home/mren203_group_002/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-2ea34560-f401-4b9a-a448-99e54c24f346.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mren203_group_002/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mren203_group_002'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mren203_group_002/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mren203_group_002/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d0c25757da.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mren203_group_002/ros2_ws/install/sllidar_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.170 51912 192.168.50.210 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mren203_group_002/ros2_ws/install/sllidar_ros2:/opt/ros/humble')]), 'shell': False}
+[0.099115] (-) TimerEvent: {}
+[0.200645] (-) TimerEvent: {}
+[0.302097] (-) TimerEvent: {}
+[0.340686] (mren203_new) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.402267] (-) TimerEvent: {}
+[0.503207] (-) TimerEvent: {}
+[0.602345] (mren203_new) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.603320] (-) TimerEvent: {}
+[0.633123] (mren203_new) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.703586] (-) TimerEvent: {}
+[0.804581] (-) TimerEvent: {}
+[0.905415] (-) TimerEvent: {}
+[0.976370] (mren203_new) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.001751] (mren203_new) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.002447] (mren203_new) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.003760] (mren203_new) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.005545] (-) TimerEvent: {}
+[1.015580] (mren203_new) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.105750] (-) TimerEvent: {}
+[1.206580] (-) TimerEvent: {}
+[1.307367] (-) TimerEvent: {}
+[1.381856] (mren203_new) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.407539] (-) TimerEvent: {}
+[1.410258] (mren203_new) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.411244] (mren203_new) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.412814] (mren203_new) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.442269] (mren203_new) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.507820] (-) TimerEvent: {}
+[1.608599] (-) TimerEvent: {}
+[1.709300] (-) TimerEvent: {}
+[1.810399] (-) TimerEvent: {}
+[1.911037] (-) TimerEvent: {}
+[2.011654] (-) TimerEvent: {}
+[2.112330] (-) TimerEvent: {}
+[2.204646] (mren203_new) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.212572] (-) TimerEvent: {}
+[2.313325] (-) TimerEvent: {}
+[2.414154] (-) TimerEvent: {}
+[2.499608] (mren203_new) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.514344] (-) TimerEvent: {}
+[2.615063] (-) TimerEvent: {}
+[2.715712] (-) TimerEvent: {}
+[2.798595] (mren203_new) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.815946] (-) TimerEvent: {}
+[2.916823] (-) TimerEvent: {}
+[3.017516] (-) TimerEvent: {}
+[3.118263] (-) TimerEvent: {}
+[3.169776] (mren203_new) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.215579] (mren203_new) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.218383] (-) TimerEvent: {}
+[3.275803] (mren203_new) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.318575] (-) TimerEvent: {}
+[3.352383] (mren203_new) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.418753] (-) TimerEvent: {}
+[3.457747] (mren203_new) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.518929] (-) TimerEvent: {}
+[3.619596] (-) TimerEvent: {}
+[3.720269] (-) TimerEvent: {}
+[3.752118] (mren203_new) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.775778] (mren203_new) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.820451] (-) TimerEvent: {}
+[3.921130] (-) TimerEvent: {}
+[4.021849] (-) TimerEvent: {}
+[4.122519] (-) TimerEvent: {}
+[4.223255] (-) TimerEvent: {}
+[4.324104] (-) TimerEvent: {}
+[4.379605] (mren203_new) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.424273] (-) TimerEvent: {}
+[4.524986] (-) TimerEvent: {}
+[4.625657] (-) TimerEvent: {}
+[4.661404] (mren203_new) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.725853] (-) TimerEvent: {}
+[4.826672] (-) TimerEvent: {}
+[4.927713] (-) TimerEvent: {}
+[5.028455] (-) TimerEvent: {}
+[5.130536] (-) TimerEvent: {}
+[5.136835] (mren203_new) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.218297] (mren203_new) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.230684] (-) TimerEvent: {}
+[5.331477] (-) TimerEvent: {}
+[5.432266] (-) TimerEvent: {}
+[5.533057] (-) TimerEvent: {}
+[5.567074] (mren203_new) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.569461] (mren203_new) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.633289] (-) TimerEvent: {}
+[5.734157] (-) TimerEvent: {}
+[5.834872] (-) TimerEvent: {}
+[5.923884] (mren203_new) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.929623] (mren203_new) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.934997] (-) TimerEvent: {}
+[6.035618] (-) TimerEvent: {}
+[6.136350] (-) TimerEvent: {}
+[6.198848] (mren203_new) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.236528] (-) TimerEvent: {}
+[6.337309] (-) TimerEvent: {}
+[6.414414] (mren203_new) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system \n'}
+[6.437540] (-) TimerEvent: {}
+[6.538321] (-) TimerEvent: {}
+[6.639041] (-) TimerEvent: {}
+[6.727397] (mren203_new) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.739204] (-) TimerEvent: {}
+[6.792838] (mren203_new) StdoutLine: {'line': b'-- Generating done\n'}
+[6.810655] (mren203_new) StdoutLine: {'line': b'-- Build files have been written to: /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new\n'}
+[6.839588] (-) TimerEvent: {}
+[6.850513] (mren203_new) CommandEnded: {'returncode': 0}
+[6.852470] (mren203_new) JobProgress: {'identifier': 'mren203_new', 'progress': 'build'}
+[6.855027] (mren203_new) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new', '--', '-j4', '-l4'], 'cwd': '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mren203_group_002'), ('SSH_CLIENT', '192.168.50.170 51912 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mren203_group_002'), ('OLDPWD', '/home/mren203_group_002/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-2ea34560-f401-4b9a-a448-99e54c24f346.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/mren203_group_002/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mren203_group_002'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mren203_group_002/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mren203_group_002/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/mren203_group_002/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-d0c25757da.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mren203_group_002/ros2_ws/install/sllidar_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.50.170 51912 192.168.50.210 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mren203_group_002/ros2_ws/install/sllidar_ros2:/opt/ros/humble')]), 'shell': False}
+[6.939853] (-) TimerEvent: {}
+[7.040687] (-) TimerEvent: {}
+[7.081171] (mren203_new) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/arduino_parser.dir/arduino_parser.cpp.o\x1b[0m\n'}
+[7.140863] (-) TimerEvent: {}
+[7.241606] (-) TimerEvent: {}
+[7.342307] (-) TimerEvent: {}
+[7.443049] (-) TimerEvent: {}
+[7.543728] (-) TimerEvent: {}
+[7.644412] (-) TimerEvent: {}
+[7.745138] (-) TimerEvent: {}
+[7.845843] (-) TimerEvent: {}
+[7.946568] (-) TimerEvent: {}
+[8.047248] (-) TimerEvent: {}
+[8.147923] (-) TimerEvent: {}
+[8.248613] (-) TimerEvent: {}
+[8.349319] (-) TimerEvent: {}
+[8.450041] (-) TimerEvent: {}
+[8.550744] (-) TimerEvent: {}
+[8.651531] (-) TimerEvent: {}
+[8.752226] (-) TimerEvent: {}
+[8.852899] (-) TimerEvent: {}
+[8.953756] (-) TimerEvent: {}
+[9.054532] (-) TimerEvent: {}
+[9.155441] (-) TimerEvent: {}
+[9.256140] (-) TimerEvent: {}
+[9.356875] (-) TimerEvent: {}
+[9.457679] (-) TimerEvent: {}
+[9.558503] (-) TimerEvent: {}
+[9.659216] (-) TimerEvent: {}
+[9.759906] (-) TimerEvent: {}
+[9.860595] (-) TimerEvent: {}
+[9.961278] (-) TimerEvent: {}
+[10.062007] (-) TimerEvent: {}
+[10.162861] (-) TimerEvent: {}
+[10.263896] (-) TimerEvent: {}
+[10.364962] (-) TimerEvent: {}
+[10.465887] (-) TimerEvent: {}
+[10.566628] (-) TimerEvent: {}
+[10.667338] (-) TimerEvent: {}
+[10.768015] (-) TimerEvent: {}
+[10.868805] (-) TimerEvent: {}
+[10.969790] (-) TimerEvent: {}
+[11.070793] (-) TimerEvent: {}
+[11.171510] (-) TimerEvent: {}
+[11.272302] (-) TimerEvent: {}
+[11.372956] (-) TimerEvent: {}
+[11.473719] (-) TimerEvent: {}
+[11.574393] (-) TimerEvent: {}
+[11.675057] (-) TimerEvent: {}
+[11.775782] (-) TimerEvent: {}
+[11.876645] (-) TimerEvent: {}
+[11.977597] (-) TimerEvent: {}
+[12.078329] (-) TimerEvent: {}
+[12.179027] (-) TimerEvent: {}
+[12.279770] (-) TimerEvent: {}
+[12.380526] (-) TimerEvent: {}
+[12.481191] (-) TimerEvent: {}
+[12.581966] (-) TimerEvent: {}
+[12.682762] (-) TimerEvent: {}
+[12.783623] (-) TimerEvent: {}
+[12.884300] (-) TimerEvent: {}
+[12.985002] (-) TimerEvent: {}
+[13.085793] (-) TimerEvent: {}
+[13.186676] (-) TimerEvent: {}
+[13.287451] (-) TimerEvent: {}
+[13.388364] (-) TimerEvent: {}
+[13.489096] (-) TimerEvent: {}
+[13.590009] (-) TimerEvent: {}
+[13.690685] (-) TimerEvent: {}
+[13.791346] (-) TimerEvent: {}
+[13.892030] (-) TimerEvent: {}
+[13.993208] (-) TimerEvent: {}
+[14.094120] (-) TimerEvent: {}
+[14.194975] (-) TimerEvent: {}
+[14.296830] (-) TimerEvent: {}
+[14.397645] (-) TimerEvent: {}
+[14.498430] (-) TimerEvent: {}
+[14.599214] (-) TimerEvent: {}
+[14.699986] (-) TimerEvent: {}
+[14.800709] (-) TimerEvent: {}
+[14.901592] (-) TimerEvent: {}
+[15.002375] (-) TimerEvent: {}
+[15.103182] (-) TimerEvent: {}
+[15.203983] (-) TimerEvent: {}
+[15.304749] (-) TimerEvent: {}
+[15.405576] (-) TimerEvent: {}
+[15.506290] (-) TimerEvent: {}
+[15.607012] (-) TimerEvent: {}
+[15.707844] (-) TimerEvent: {}
+[15.808590] (-) TimerEvent: {}
+[15.909579] (-) TimerEvent: {}
+[16.010593] (-) TimerEvent: {}
+[16.111317] (-) TimerEvent: {}
+[16.212071] (-) TimerEvent: {}
+[16.312822] (-) TimerEvent: {}
+[16.413644] (-) TimerEvent: {}
+[16.514457] (-) TimerEvent: {}
+[16.615241] (-) TimerEvent: {}
+[16.716066] (-) TimerEvent: {}
+[16.817106] (-) TimerEvent: {}
+[16.917969] (-) TimerEvent: {}
+[17.018706] (-) TimerEvent: {}
+[17.119437] (-) TimerEvent: {}
+[17.220174] (-) TimerEvent: {}
+[17.320954] (-) TimerEvent: {}
+[17.421703] (-) TimerEvent: {}
+[17.522418] (-) TimerEvent: {}
+[17.623171] (-) TimerEvent: {}
+[17.723934] (-) TimerEvent: {}
+[17.824694] (-) TimerEvent: {}
+[17.925591] (-) TimerEvent: {}
+[18.026365] (-) TimerEvent: {}
+[18.127217] (-) TimerEvent: {}
+[18.227985] (-) TimerEvent: {}
+[18.328778] (-) TimerEvent: {}
+[18.429653] (-) TimerEvent: {}
+[18.530423] (-) TimerEvent: {}
+[18.631428] (-) TimerEvent: {}
+[18.732756] (-) TimerEvent: {}
+[18.834170] (-) TimerEvent: {}
+[18.936279] (-) TimerEvent: {}
+[19.038705] (-) TimerEvent: {}
+[19.139499] (-) TimerEvent: {}
+[19.240294] (-) TimerEvent: {}
+[19.341102] (-) TimerEvent: {}
+[19.441948] (-) TimerEvent: {}
+[19.542825] (-) TimerEvent: {}
+[19.643603] (-) TimerEvent: {}
+[19.744337] (-) TimerEvent: {}
+[19.845138] (-) TimerEvent: {}
+[19.945922] (-) TimerEvent: {}
+[20.046719] (-) TimerEvent: {}
+[20.147502] (-) TimerEvent: {}
+[20.248288] (-) TimerEvent: {}
+[20.349042] (-) TimerEvent: {}
+[20.449858] (-) TimerEvent: {}
+[20.550707] (-) TimerEvent: {}
+[20.651474] (-) TimerEvent: {}
+[20.752236] (-) TimerEvent: {}
+[20.853059] (-) TimerEvent: {}
+[20.953917] (-) TimerEvent: {}
+[21.054736] (-) TimerEvent: {}
+[21.155480] (-) TimerEvent: {}
+[21.256283] (-) TimerEvent: {}
+[21.357053] (-) TimerEvent: {}
+[21.457857] (-) TimerEvent: {}
+[21.558592] (-) TimerEvent: {}
+[21.659319] (-) TimerEvent: {}
+[21.760095] (-) TimerEvent: {}
+[21.860863] (-) TimerEvent: {}
+[21.961636] (-) TimerEvent: {}
+[22.062362] (-) TimerEvent: {}
+[22.163143] (-) TimerEvent: {}
+[22.263920] (-) TimerEvent: {}
+[22.364681] (-) TimerEvent: {}
+[22.465439] (-) TimerEvent: {}
+[22.566293] (-) TimerEvent: {}
+[22.667091] (-) TimerEvent: {}
+[22.767913] (-) TimerEvent: {}
+[22.868850] (-) TimerEvent: {}
+[22.970607] (-) TimerEvent: {}
+[23.071414] (-) TimerEvent: {}
+[23.172150] (-) TimerEvent: {}
+[23.272927] (-) TimerEvent: {}
+[23.373727] (-) TimerEvent: {}
+[23.474530] (-) TimerEvent: {}
+[23.575566] (-) TimerEvent: {}
+[23.676556] (-) TimerEvent: {}
+[23.777343] (-) TimerEvent: {}
+[23.878198] (-) TimerEvent: {}
+[23.978944] (-) TimerEvent: {}
+[24.079701] (-) TimerEvent: {}
+[24.180516] (-) TimerEvent: {}
+[24.281357] (-) TimerEvent: {}
+[24.382232] (-) TimerEvent: {}
+[24.482993] (-) TimerEvent: {}
+[24.583748] (-) TimerEvent: {}
+[24.684506] (-) TimerEvent: {}
+[24.785261] (-) TimerEvent: {}
+[24.798855] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:44:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[24.799560] (mren203_new) StderrLine: {'line': b'   44 |     rclcpp::\x1b[01;31m\x1b[Ksensor_msgs\x1b[m\x1b[K::joint_state joint_pub;\n'}
+[24.800046] (mren203_new) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.855115] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KArduinoParser::ArduinoParser()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.855875] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.856208] (mren203_new) StderrLine: {'line': b'   34 |         \x1b[01;31m\x1b[Kjoint_pub\x1b[m\x1b[K = this->create_publisher<sensor_msgs::msg:joint_state>("actuator/data", 10);\n'}
+[24.856474] (mren203_new) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[24.856728] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kfound \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 in nested-name-specifier, expected \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.856984] (mren203_new) StderrLine: {'line': b'   34 |         joint_pub = this->create_publisher<sensor_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[Kjoint_state>("actuator/data", 10);\n'}
+[24.857235] (mren203_new) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[24.857484] (mren203_new) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K::\x1b[m\x1b[K\n'}
+[24.857798] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_state\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KJointState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[24.858065] (mren203_new) StderrLine: {'line': b'   34 |         joint_pub = this->create_publisher<sensor_msgs::msg:\x1b[01;31m\x1b[Kjoint_state\x1b[m\x1b[K>("actuator/data", 10);\n'}
+[24.858353] (mren203_new) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.858628] (mren203_new) StderrLine: {'line': b'      |                                                             \x1b[32m\x1b[KJointState\x1b[m\x1b[K\n'}
+[24.859180] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KArduinoParser::create_publisher<<expression error> >(const char [14], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.860199] (mren203_new) StderrLine: {'line': b'   34 |         joint_pub = \x1b[01;31m\x1b[Kthis->create_publisher<sensor_msgs::msg:joint_state>("actuator/data", 10)\x1b[m\x1b[K;\n'}
+[24.860601] (mren203_new) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.861003] (mren203_new) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[24.861738] (mren203_new) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[24.862439] (mren203_new) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[24.862900] (mren203_new) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:8\x1b[m\x1b[K:\n'}
+[24.863329] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.863778] (mren203_new) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[24.864245] (mren203_new) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.864654] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[24.865122] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[24.865623] (mren203_new) StderrLine: {'line': b'   34 |         joint_pub = \x1b[01;31m\x1b[Kthis->create_publisher<sensor_msgs::msg:joint_state>("actuator/data", 10)\x1b[m\x1b[K;\n'}
+[24.866065] (mren203_new) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.885483] (-) TimerEvent: {}
+[24.948960] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ArduinoParser::parse_and_publish(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.949606] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:75:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kencoder_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[24.950060] (mren203_new) StderrLine: {'line': b'   75 |             \x1b[01;31m\x1b[Kencoder_pub_\x1b[m\x1b[K->publish(enc_msg);\n'}
+[24.950827] (mren203_new) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.977466] (mren203_new) StderrLine: {'line': b'\x1b[01m\x1b[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:85:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kjoint_msg\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[24.978161] (mren203_new) StderrLine: {'line': b'   85 |             \x1b[01;31m\x1b[Kjoint_pub\x1b[m\x1b[K->publish(joint_msg);\n'}
+[24.978559] (mren203_new) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[24.978917] (mren203_new) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kjoint_msg\x1b[m\x1b[K\n'}
+[24.985795] (-) TimerEvent: {}
+[25.086559] (-) TimerEvent: {}
+[25.187335] (-) TimerEvent: {}
+[25.288099] (-) TimerEvent: {}
+[25.388868] (-) TimerEvent: {}
+[25.489719] (-) TimerEvent: {}
+[25.590466] (-) TimerEvent: {}
+[25.691287] (-) TimerEvent: {}
+[25.792021] (-) TimerEvent: {}
+[25.892822] (-) TimerEvent: {}
+[25.993659] (-) TimerEvent: {}
+[26.094411] (-) TimerEvent: {}
+[26.195190] (-) TimerEvent: {}
+[26.295988] (-) TimerEvent: {}
+[26.396759] (-) TimerEvent: {}
+[26.497556] (-) TimerEvent: {}
+[26.598310] (-) TimerEvent: {}
+[26.699072] (-) TimerEvent: {}
+[26.799913] (-) TimerEvent: {}
+[26.900677] (-) TimerEvent: {}
+[27.001554] (-) TimerEvent: {}
+[27.102277] (-) TimerEvent: {}
+[27.203029] (-) TimerEvent: {}
+[27.303867] (-) TimerEvent: {}
+[27.404638] (-) TimerEvent: {}
+[27.505550] (-) TimerEvent: {}
+[27.606443] (-) TimerEvent: {}
+[27.707214] (-) TimerEvent: {}
+[27.808009] (-) TimerEvent: {}
+[27.908891] (-) TimerEvent: {}
+[27.934686] (mren203_new) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/arduino_parser.dir/build.make:76: CMakeFiles/arduino_parser.dir/arduino_parser.cpp.o] Error 1\n'}
+[27.935522] (mren203_new) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/arduino_parser.dir/all] Error 2\n'}
+[27.936555] (mren203_new) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[27.943260] (mren203_new) CommandEnded: {'returncode': 2}
+[27.983550] (mren203_new) JobEnded: {'identifier': 'mren203_new', 'rc': 2}
+[27.996351] (-) EventReactorShutdown: {}

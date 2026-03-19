@@ -1,0 +1,81 @@
+[0.059s] Invoking command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mren203_group_002/ros2_ws/src/mren203_new -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new
+[0.339s] -- The C compiler identification is GNU 11.4.0
+[0.601s] -- The CXX compiler identification is GNU 11.4.0
+[0.631s] -- Detecting C compiler ABI info
+[0.975s] -- Detecting C compiler ABI info - done
+[1.000s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.000s] -- Detecting C compile features
+[1.002s] -- Detecting C compile features - done
+[1.014s] -- Detecting CXX compiler ABI info
+[1.380s] -- Detecting CXX compiler ABI info - done
+[1.408s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.409s] -- Detecting CXX compile features
+[1.411s] -- Detecting CXX compile features - done
+[1.440s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.203s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.498s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.797s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[3.168s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.214s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.274s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.351s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.456s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.750s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.774s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.378s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.660s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.135s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.216s] -- Looking for pthread.h
+[5.565s] -- Looking for pthread.h - found
+[5.568s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.922s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.928s] -- Found Threads: TRUE  
+[6.197s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.413s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[6.726s] -- Configuring done
+[6.791s] -- Generating done
+[6.809s] -- Build files have been written to: /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new
+[6.849s] Invoked command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/mren203_group_002/ros2_ws/src/mren203_new -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new
+[6.859s] Invoking command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new -- -j4 -l4
+[7.079s] [ 50%] [32mBuilding CXX object CMakeFiles/arduino_parser.dir/arduino_parser.cpp.o[0m
+[24.797s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:44:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+[24.798s]    44 |     rclcpp::[01;31m[Ksensor_msgs[m[K::joint_state joint_pub;
+[24.798s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[24.854s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:[m[K In constructor ‘[01m[KArduinoParser::ArduinoParser()[m[K’:
+[24.854s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_pub[m[K’ was not declared in this scope
+[24.854s]    34 |         [01;31m[Kjoint_pub[m[K = this->create_publisher<sensor_msgs::msg:joint_state>("actuator/data", 10);
+[24.854s]       |         [01;31m[K^~~~~~~~~[m[K
+[24.855s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:60:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[24.855s]    34 |         joint_pub = this->create_publisher<sensor_msgs::msg[01;31m[K:[m[Kjoint_state>("actuator/data", 10);
+[24.855s]       |                                                            [01;31m[K^[m[K
+[24.855s]       |                                                            [32m[K::[m[K
+[24.856s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_state[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[KJointState[m[K’?
+[24.856s]    34 |         joint_pub = this->create_publisher<sensor_msgs::msg:[01;31m[Kjoint_state[m[K>("actuator/data", 10);
+[24.856s]       |                                                             [01;31m[K^~~~~~~~~~~[m[K
+[24.857s]       |                                                             [32m[KJointState[m[K
+[24.858s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KArduinoParser::create_publisher<<expression error> >(const char [14], int)[m[K’
+[24.858s]    34 |         joint_pub = [01;31m[Kthis->create_publisher<sensor_msgs::msg:joint_state>("actuator/data", 10)[m[K;
+[24.859s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[24.859s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[24.860s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[24.861s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[24.861s]                  from [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:8[m[K:
+[24.861s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[24.862s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[24.862s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[24.863s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[24.863s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:34:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[24.864s]    34 |         joint_pub = [01;31m[Kthis->create_publisher<sensor_msgs::msg:joint_state>("actuator/data", 10)[m[K;
+[24.864s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[24.947s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:[m[K In member function ‘[01m[Kvoid ArduinoParser::parse_and_publish(const string&)[m[K’:
+[24.948s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:75:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kencoder_pub_[m[K’ was not declared in this scope
+[24.948s]    75 |             [01;31m[Kencoder_pub_[m[K->publish(enc_msg);
+[24.949s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[24.976s] [01m[K/home/mren203_group_002/ros2_ws/src/mren203_new/arduino_parser.cpp:85:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kjoint_msg[m[K’?
+[24.976s]    85 |             [01;31m[Kjoint_pub[m[K->publish(joint_msg);
+[24.977s]       |             [01;31m[K^~~~~~~~~[m[K
+[24.977s]       |             [32m[Kjoint_msg[m[K
+[27.933s] gmake[2]: *** [CMakeFiles/arduino_parser.dir/build.make:76: CMakeFiles/arduino_parser.dir/arduino_parser.cpp.o] Error 1
+[27.934s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/arduino_parser.dir/all] Error 2
+[27.935s] gmake: *** [Makefile:146: all] Error 2
+[27.942s] Invoked command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new -- -j4 -l4
