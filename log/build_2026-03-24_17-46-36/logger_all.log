@@ -1,0 +1,80 @@
+[0.716s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.716s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8b3b0f10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8b5554e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8b5554e0>>, mixin_verb=('build',))
+[1.857s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.857s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.858s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.858s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mren203_group_002/ros2_ws/src/mren203_new'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.968s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'mren203_new'
+[1.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.969s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.076s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.104s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/mren203_group_002/ros2_ws/install
+[2.119s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 70 installed packages in /home/mren203_group_002/install
+[2.130s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/humble
+[2.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'cmake_args' from command line to 'None'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'cmake_target' from command line to 'None'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'cmake_clean_cache' from command line to 'False'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'cmake_clean_first' from command line to 'False'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'cmake_force_configure' from command line to 'False'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'ament_cmake_args' from command line to 'None'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'catkin_cmake_args' from command line to 'None'
+[2.353s] Level 5:colcon.colcon_core.verb:set package 'mren203_new' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.353s] DEBUG:colcon.colcon_core.verb:Building package 'mren203_new' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new', 'merge_install': False, 'path': '/home/mren203_group_002/ros2_ws/src/mren203_new', 'symlink_install': True, 'test_result_base': None}
+[2.354s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.359s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mren203_group_002/ros2_ws/src/mren203_new' with build type 'ament_cmake'
+[2.360s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mren203_group_002/ros2_ws/src/mren203_new'
+[2.373s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.374s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mren203_group_002/install/ament_uncrustify:/home/mren203_group_002/install/rpyutils:/home/mren203_group_002/install/rosidl_cli:/home/mren203_group_002/install/launch_testing:/home/mren203_group_002/install/launch_yaml:/home/mren203_group_002/install/launch_xml:/home/mren203_group_002/install/launch:/home/mren203_group_002/install/osrf_pycommon:/home/mren203_group_002/install/domain_coordinator:/home/mren203_group_002/install/ament_xmllint:/home/mren203_group_002/install/ament_pycodestyle:/home/mren203_group_002/install/ament_pep257:/home/mren203_group_002/install/ament_package:/home/mren203_group_002/install/ament_lint_cmake:/home/mren203_group_002/install/ament_flake8:/home/mren203_group_002/install/ament_copyright:/home/mren203_group_002/install/ament_lint:/home/mren203_group_002/install/ament_index_python:/home/mren203_group_002/install/ament_cpplint:/home/mren203_group_002/install/ament_cppcheck:/opt/ros/humble /usr/bin/cmake --build /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new -- -j4 -l4
+[8.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mren203_group_002/install/ament_uncrustify:/home/mren203_group_002/install/rpyutils:/home/mren203_group_002/install/rosidl_cli:/home/mren203_group_002/install/launch_testing:/home/mren203_group_002/install/launch_yaml:/home/mren203_group_002/install/launch_xml:/home/mren203_group_002/install/launch:/home/mren203_group_002/install/osrf_pycommon:/home/mren203_group_002/install/domain_coordinator:/home/mren203_group_002/install/ament_xmllint:/home/mren203_group_002/install/ament_pycodestyle:/home/mren203_group_002/install/ament_pep257:/home/mren203_group_002/install/ament_package:/home/mren203_group_002/install/ament_lint_cmake:/home/mren203_group_002/install/ament_flake8:/home/mren203_group_002/install/ament_copyright:/home/mren203_group_002/install/ament_lint:/home/mren203_group_002/install/ament_index_python:/home/mren203_group_002/install/ament_cpplint:/home/mren203_group_002/install/ament_cppcheck:/opt/ros/humble /usr/bin/cmake --build /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new -- -j4 -l4
+[8.349s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mren203_new)
+[8.366s] Level 1:colcon.colcon_core.environment:checking '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new' for CMake module files
+[8.368s] Level 1:colcon.colcon_core.environment:checking '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new' for CMake config files
+[8.371s] Level 1:colcon.colcon_core.environment:checking '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/bin'
+[8.371s] Level 1:colcon.colcon_core.environment:checking '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/lib/pkgconfig/mren203_new.pc'
+[8.372s] Level 1:colcon.colcon_core.environment:checking '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/lib/python3.10/site-packages'
+[8.374s] Level 1:colcon.colcon_core.environment:checking '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/bin'
+[8.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/share/mren203_new/package.ps1'
+[8.379s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/share/mren203_new/package.dsv'
+[8.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/share/mren203_new/package.sh'
+[8.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/share/mren203_new/package.bash'
+[8.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/share/mren203_new/package.zsh'
+[8.393s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mren203_group_002/ros2_ws/src/mren203_new/install/mren203_new/share/colcon-core/packages/mren203_new)
+[8.395s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.396s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.397s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[8.397s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.427s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.428s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.428s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.448s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.449s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/local_setup.ps1'
+[8.454s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mren203_group_002/ros2_ws/src/mren203_new/install/_local_setup_util_ps1.py'
+[8.465s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/setup.ps1'
+[8.500s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/local_setup.sh'
+[8.503s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mren203_group_002/ros2_ws/src/mren203_new/install/_local_setup_util_sh.py'
+[8.506s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/setup.sh'
+[8.530s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/local_setup.bash'
+[8.533s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/setup.bash'
+[8.556s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/local_setup.zsh'
+[8.559s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mren203_group_002/ros2_ws/src/mren203_new/install/setup.zsh'

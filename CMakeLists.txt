@@ -10,7 +10,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system)
+find_package(tf2_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # # 2. Add the Executable
 # # This assumes your file is named 'arduino_parser.cpp' inside the 'src' folder
@@ -34,6 +37,19 @@ find_package(Boost REQUIRED COMPONENTS system)
 
 install(PROGRAMS 
   scripts/motor_test_node.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+add_executable(odom_publisher scripts/odom_publisher.cpp)
+ament_target_dependencies(odom_publisher
+  rclcpp
+  nav_msgs
+  geometry_msgs
+  tf2_ros
+)
+
+install(TARGETS
+  odom_publisher
   DESTINATION lib/${PROJECT_NAME}
 )
 

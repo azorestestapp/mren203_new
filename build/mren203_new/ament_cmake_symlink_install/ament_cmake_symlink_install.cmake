@@ -315,7 +315,10 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "arduino_parser" "DESTINATION" "lib/mren203_new")
+# install(PROGRAMS "scripts/motor_test_node.py" "DESTINATION" "lib/mren203_new")
+ament_cmake_symlink_install_programs("/home/mren203_group_002/ros2_ws/src/mren203_new" PROGRAMS "scripts/motor_test_node.py" "DESTINATION" "lib/mren203_new")
+
+# install("TARGETS" "odom_publisher" "DESTINATION" "lib/mren203_new")
 include("/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mren203_new" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

@@ -1,0 +1,32 @@
+[0.100s] Invoking command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mren203_group_002/install/ament_uncrustify:/home/mren203_group_002/install/rpyutils:/home/mren203_group_002/install/rosidl_cli:/home/mren203_group_002/install/launch_testing:/home/mren203_group_002/install/launch_yaml:/home/mren203_group_002/install/launch_xml:/home/mren203_group_002/install/launch:/home/mren203_group_002/install/osrf_pycommon:/home/mren203_group_002/install/domain_coordinator:/home/mren203_group_002/install/ament_xmllint:/home/mren203_group_002/install/ament_pycodestyle:/home/mren203_group_002/install/ament_pep257:/home/mren203_group_002/install/ament_package:/home/mren203_group_002/install/ament_lint_cmake:/home/mren203_group_002/install/ament_flake8:/home/mren203_group_002/install/ament_copyright:/home/mren203_group_002/install/ament_lint:/home/mren203_group_002/install/ament_index_python:/home/mren203_group_002/install/ament_cpplint:/home/mren203_group_002/install/ament_cppcheck:/opt/ros/humble /usr/bin/cmake --build /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new -- -j4 -l4
+[0.264s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.243s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.285s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[1.495s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.506s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.531s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.583s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.644s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.794s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.810s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.224s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.420s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.637s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.818s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[5.901s] -- Configuring done
+[5.937s] [31mCMake Error at CMakeLists.txt:43 (add_executable):
+[5.938s]   Cannot find source file:
+[5.938s] 
+[5.939s]     src/odom_publisher.cpp
+[5.940s] 
+[5.940s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[5.941s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[5.941s] 
+[5.942s] [0m
+[5.943s] [31mCMake Error at CMakeLists.txt:43 (add_executable):
+[5.943s]   No SOURCES given to target: odom_publisher
+[5.944s] 
+[5.944s] [0m
+[5.945s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[5.978s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[5.985s] Invoked command in '/home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mren203_group_002/install/ament_uncrustify:/home/mren203_group_002/install/rpyutils:/home/mren203_group_002/install/rosidl_cli:/home/mren203_group_002/install/launch_testing:/home/mren203_group_002/install/launch_yaml:/home/mren203_group_002/install/launch_xml:/home/mren203_group_002/install/launch:/home/mren203_group_002/install/osrf_pycommon:/home/mren203_group_002/install/domain_coordinator:/home/mren203_group_002/install/ament_xmllint:/home/mren203_group_002/install/ament_pycodestyle:/home/mren203_group_002/install/ament_pep257:/home/mren203_group_002/install/ament_package:/home/mren203_group_002/install/ament_lint_cmake:/home/mren203_group_002/install/ament_flake8:/home/mren203_group_002/install/ament_copyright:/home/mren203_group_002/install/ament_lint:/home/mren203_group_002/install/ament_index_python:/home/mren203_group_002/install/ament_cpplint:/home/mren203_group_002/install/ament_cppcheck:/opt/ros/humble /usr/bin/cmake --build /home/mren203_group_002/ros2_ws/src/mren203_new/build/mren203_new -- -j4 -l4

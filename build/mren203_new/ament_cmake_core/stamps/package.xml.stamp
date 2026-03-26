@@ -22,6 +22,10 @@
   <depend>rosidl_default_runtime</depend>
   <depend>tf2_ros</depend>
   <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <depend>rclpy</depend>
+  <depend>python3-serial</depend>
 
   <member_of_group>rosidl_interface_packages</member_of_group>
 
