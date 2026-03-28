@@ -19,8 +19,6 @@ public:
         odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("/odom", 10);
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
 
-lost git branch 
-
         timer_ = this->create_wall_timer(
             100ms, std::bind(&OdomPublisher::publish_odom, this));
 

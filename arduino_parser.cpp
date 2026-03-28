@@ -34,7 +34,7 @@ public:
         imu_pub_ = this->create_publisher<sensor_msgs::msg::Imu>("imu/data_raw", 10);
         // joint_pub_ = this->create_publisher<sensor_msgs::msg::JointState>("actuator/data", 10);
 
-        timer_ = this->create_wall_timer(100ms, std::bind(&ArduinoParser::read_serial, this));
+        timer_ = this->create_wall_timer(500ms, std::bind(&ArduinoParser::read_serial, this));
     }
 
 private:

@@ -42,6 +42,10 @@ ament_target_dependencies(odom_publisher
   nav_msgs
   geometry_msgs
   tf2_ros
+  sensor_msgs
+  std_msgs
+
+
 )
 
 install(TARGETS
