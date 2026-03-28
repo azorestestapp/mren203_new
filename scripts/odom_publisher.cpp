@@ -5,6 +5,8 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "tf2_ros/transform_broadcaster.h"
+#include "std_msgs/msg/int32_multi_array.hpp"
+#include "sensor_msgs/msg/imu.hpp"
 
 using namespace std::chrono_literals;
 
@@ -17,6 +19,8 @@ public:
         odom_pub_ = this->create_publisher<nav_msgs::msg::Odometry>("/odom", 10);
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(*this);
 
+lost git branch 
+
         timer_ = this->create_wall_timer(
             100ms, std::bind(&OdomPublisher::publish_odom, this));
 
@@ -24,6 +28,13 @@ public:
     }
 
 private:
+
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
+    rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr wheel_speeds_sub;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr angular_velocity_subscriber;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    rclcpp::TimerBase::SharedPtr timer_;
+
     void publish_odom()
     {
         auto now = this->get_clock()->now();
@@ -75,9 +86,6 @@ private:
         tf_broadcaster_->sendTransform(tf_msg);
     }
 
-    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
-    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
-    rclcpp::TimerBase::SharedPtr timer_;
 };
 
 int main(int argc, char ** argv)

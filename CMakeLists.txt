@@ -15,25 +15,21 @@ find_package(Boost REQUIRED COMPONENTS system)
 find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-# # 2. Add the Executable
-# # This assumes your file is named 'arduino_parser.cpp' inside the 'src' folder
-# add_executable(arduino_parser arduino_parser.cpp)
 
-# # 3. Link Dependencies to the Executable
-# ament_target_dependencies(arduino_parser
-#   rclcpp
-#   std_msgs
-#   sensor_msgs
-# )
+add_executable(arduino_parser arduino_parser.cpp)
 
-# # Manually link Boost (since it's a non-Ament library)
-# target_link_libraries(arduino_parser Boost::system)
+ament_target_dependencies(arduino_parser
+  rclcpp
+  std_msgs
+  sensor_msgs
+)
 
-# # 4. Install the Executable (so 'ros2 run' can find it)
-# install(TARGETS
-#   arduino_parser
-#   DESTINATION lib/${PROJECT_NAME}
-# )
+target_link_libraries(arduino_parser Boost::system)
+
+install(TARGETS
+  arduino_parser
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 install(PROGRAMS 
   scripts/motor_test_node.py
