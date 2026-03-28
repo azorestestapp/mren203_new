@@ -39,11 +39,5 @@ install(TARGETS
   arduino_parser
   odom_publisher
   DESTINATION lib/${PROJECT_NAME}
-)
-
-install(PROGRAMS
-  scripts/motor_test_node.py
-  DESTINATION lib/${PROJECT_NAME}
-)
 
 ament_package()
