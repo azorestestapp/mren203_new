@@ -15,7 +15,7 @@ using namespace std::chrono_literals;
 class ArduinoParser : public rclcpp::Node {
 public:
     ArduinoParser() : Node("arduino_parser"), io_(), serial_(io_) {
-        this->declare_parameter("port", "/dev/ttyACM0");
+        this->declare_parameter("port", "/dev/ttyUSB0");
         this->declare_parameter("baudrate", 115200);
 
         std::string port = this->get_parameter("port").as_string();
@@ -92,9 +92,6 @@ void parse_and_publish(const std::string& line) {
         RCLCPP_WARN(this->get_logger(), "Malformed line (expected 6 values, got %zu): %s", tokens.size(), line.c_str());
     }
 }
-
-
-
 };
 
 int main(int argc, char * argv[]) {
