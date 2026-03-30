@@ -15,7 +15,6 @@ find_package(Boost REQUIRED COMPONENTS system)
 find_package(tf2_ros REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-
 add_executable(arduino_parser arduino_parser.cpp)
 
 ament_target_dependencies(arduino_parser
@@ -52,6 +51,20 @@ install(TARGETS
   odom_publisher
   DESTINATION lib/${PROJECT_NAME}
 )
+
+
+add_executable(cmd_vel_serial_bridge scripts/cmd_vel_serial_bridge.cpp)
+ament_target_dependencies(cmd_vel_serial_bridge
+  rclcpp
+  geometry_msgs
+)
+
+install(TARGETS
+  cmd_vel_serial_bridge
+  DESTINATION lib/${PROJECT_NAME}
+  )
+
+
 
 # 5. Export the Package
 ament_package()

@@ -1,37 +1,29 @@
 #!/usr/bin/env python3
-import rclpy
-from rclpy.node import Node
-from geometry_msgs.msg import Twist
+import time
 import serial
 
-class MotorTestNode(Node):
-    def _init_(self):
-        super()._init_('motor_test_node')
+PORT = "/dev/ttyACM0"
+BAUD = 115200
 
-        #open serial port to arduino
-        self.ser = serial.Serial('/dev/ttyACM0', 115200, timeout=0.1)
+def main():
+    ser = serial.Serial(PORT, BAUD, timeout=0.1)
+    time.sleep(2.0)
 
-        self.timer = self.create_timer(0.1, self.send_command)
+    print("Opened serial port")
+    print("Sending 150,150")
 
-        self.pub = self
+    start = time.time()
+    while time.time() - start < 3.0:
+        ser.write(b"150,150\n")
+        time.sleep(0.1)
 
-        self.get_logger().info('Sending constant motor command')
+    print("Sending 0,0")
+    for _ in range(10):
+        ser.write(b"0,0\n")
+        time.sleep(0.1)
 
-    def send_command(self):
-        cmd = "150,150\n"
-        self.ser.write(cmd.encode())
-        self.get_logger().info(f"Sent: {cmd.strip()}")
+    ser.close()
+    print("Closed serial port")
 
-def main(args=None):
-    rclpy.init(args=args)
-    node = MotorTestNode()
-    rclpy.spin(node)
-
-    node.destroy_node()
-    rclpy.shutdown()
-
-if __name__ == '_main_':
+if __name__ == "__main__":
     main()
-
-        
-            
