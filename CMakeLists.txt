@@ -43,9 +43,8 @@ ament_target_dependencies(odom_publisher
   tf2_ros
   sensor_msgs
   std_msgs
-
-
 )
+
 
 install(TARGETS
   odom_publisher
@@ -59,10 +58,23 @@ ament_target_dependencies(cmd_vel_serial_bridge
   geometry_msgs
 )
 
+add_executable(combined_serial_bridge scripts/combined_serial_bridge.cpp)
+ament_target_dependencies(combined_serial_bridge
+  rclcpp
+  std_msgs
+  sensor_msgs
+)
+
 install(TARGETS
   cmd_vel_serial_bridge
   DESTINATION lib/${PROJECT_NAME}
   )
+
+install(TARGETS
+  combined_serial_bridge
+  DESTINATION lib/${PROJECT_NAME}
+  )
+
 
 
 
