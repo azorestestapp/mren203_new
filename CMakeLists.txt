@@ -16,7 +16,7 @@ find_package(tf2 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system)
 
 # Arduino parser node
-add_executable(arduino_parser scripts/arduino_parser.cpp)
+add_executable(arduino_parser arduino_parser.cpp)
 ament_target_dependencies(arduino_parser
   rclcpp
   std_msgs
@@ -30,6 +30,7 @@ ament_target_dependencies(odom_publisher
   rclcpp
   std_msgs
   nav_msgs
+  sensor_msgs
   geometry_msgs
   tf2_ros
   tf2
@@ -39,5 +40,5 @@ install(TARGETS
   arduino_parser
   odom_publisher
   DESTINATION lib/${PROJECT_NAME}
-
+)
 ament_package()

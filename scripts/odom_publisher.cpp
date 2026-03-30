@@ -37,6 +37,19 @@ public:
     }
 
 private:
+
+    rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr encoder_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
+    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+
+    double x_;
+    double y_;
+    
+    double theta_;
+
+    double imu_wz_;
+    bool imu_received_;
     static constexpr double TPR = 3000.0;   // ticks/rev
     static constexpr double RHO = 0.0625;   // wheel radius [m]
     static constexpr double ELL = 0.2775;   // wheel separation [m]
@@ -154,17 +167,7 @@ private:
             wz_enc, imu_wz_, wz_fused, x_, y_, theta_);
     }
 
-    rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr encoder_sub_;
-    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
-    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
-    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 
-    double x_;
-    double y_;
-    double theta_;
-
-    double imu_wz_;
-    bool imu_received_;
 };
 
 int main(int argc, char ** argv)

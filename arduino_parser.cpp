@@ -14,7 +14,7 @@ using namespace std::chrono_literals;
 class ArduinoParser : public rclcpp::Node {
 public:
     ArduinoParser() : Node("arduino_parser"), io_(), serial_(io_) {
-        std::string port = this->declare_parameter("port", "/dev/ttyACM0");
+        std::string port = this->declare_parameter("port", "/dev/ttyUSB0");
         int baud = this->declare_parameter("baudrate", 115200);
 
         serial_.open(port);
