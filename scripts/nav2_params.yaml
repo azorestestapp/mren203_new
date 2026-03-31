@@ -1,3 +1,51 @@
+amcl:
+  ros__parameters:
+    use_sim_time: false
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    alpha5: 0.2
+    base_frame_id: "base_link"
+    beam_skip_distance: 0.5
+    beam_skip_error_threshold: 0.9
+    beam_skip_threshold: 0.3
+    do_beamskip: false
+    global_frame_id: "map"
+    lambda_short: 0.1
+    laser_likelihood_max_dist: 2.0
+    laser_max_range: 12.0
+    laser_min_range: 0.1
+    max_beams: 60
+    max_particles: 2000
+    min_particles: 500
+    odom_frame_id: "odom"
+    pf_err: 0.05
+    pf_z: 0.99
+    recovery_alpha_fast: 0.0
+    recovery_alpha_slow: 0.0
+    resample_interval: 1
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    save_pose_rate: 0.5
+    sigma_hit: 0.2
+    tf_broadcast: true
+    transform_tolerance: 1.0
+    update_min_a: 0.2
+    update_min_d: 0.25
+    z_hit: 0.5
+    z_max: 0.05
+    z_rand: 0.5
+    z_short: 0.05
+    scan_topic: scan
+    set_initial_pose: false
+
+map_server:
+  ros__parameters:
+    use_sim_time: false
+    yaml_filename: "/home/mren203_group_002/ros2_ws/src/mren203_new/scripts/my_map.yaml"
+    topic_name: "map"
+    frame_id: "map"
+
 bt_navigator:
   ros__parameters:
     use_sim_time: false
@@ -14,7 +62,7 @@ controller_server:
     controller_frequency: 10.0
     min_x_velocity_threshold: 0.001
     min_theta_velocity_threshold: 0.001
-    progress_checker_plugin: "progress_checker"
+    progress_checker_plugins: ["progress_checker"]
     goal_checker_plugins: ["goal_checker"]
     controller_plugins: ["FollowPath"]
 
@@ -48,8 +96,8 @@ local_costmap:
       global_frame: odom
       robot_base_frame: base_link
       rolling_window: true
-      width: 3
-      height: 3
+      width: 3.0
+      height: 3.0
       resolution: 0.05
       robot_radius: 0.24
       plugins: ["obstacle_layer", "inflation_layer"]
@@ -128,6 +176,18 @@ waypoint_follower:
   ros__parameters:
     use_sim_time: false
 
+velocity_smoother:
+  ros__parameters:
+    use_sim_time: false
+
+lifecycle_manager_localization:
+  ros__parameters:
+    use_sim_time: false
+    autostart: true
+    node_names:
+      - map_server
+      - amcl
+
 lifecycle_manager_navigation:
   ros__parameters:
     use_sim_time: false
@@ -138,3 +198,4 @@ lifecycle_manager_navigation:
       - behavior_server
       - bt_navigator
       - waypoint_follower
+      - velocity_smoother
